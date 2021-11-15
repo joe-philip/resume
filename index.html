@@ -55,8 +55,25 @@
       justify-items: start;
       gap: 10px;
     }
-    #services>.container>.row{
+
+    #services>.container>.row,#education>.container>.row {
       justify-content: center;
+    }
+
+    #education .row .w-more {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+    }
+    #online-courses>.container>.row .work-box>.work-content>.row .w-more{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+      width: 100%;
+    }
+    #online-courses>.container>.row .work-box>.work-content>.row .w-more>.sub-courses{
+      grid-column-start: 1;
+      grid-column-end: 3;
     }
   </style>
 </head>
@@ -176,6 +193,7 @@
                   <span>Designation</span><span>Python Developer</span>
                   <span>Internship Duration</span><span>15<sup>th</sup> Dec 2020 - 16<sup>th</sup> Feb</span>
                   <span>Work Period</span><span>20<sup>th</sup> Feb 2020 - 30<sup>th</sup> Sep</span>
+                  <span>Total Experience</span><span>9 Months</span>
                   <span>Location</span><span>Kallumthazham, Kollam</span>
                 </p>
               </div>
@@ -186,75 +204,15 @@
     </section>
     <!-- End Work Experience Section -->
 
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-check"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">WORKS COMPLETED</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">TOTAL CLIENTS</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-award"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">AWARD WON</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Counter Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
+    <!-- ======= Education Section ======= -->
+    <section id="education" class="portfolio-mf sect-pt4 route">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
               <h3 class="title-a">
-                Portfolio
+                Education
               </h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
               <div class="line-mf"></div>
             </div>
           </div>
@@ -262,22 +220,17 @@
         <div class="row">
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-1.jpg" alt="" class="img-fluid">
-                </div>
+              <div class="work-img" style="font-size: 80px;">
+                <center>+2</center>
+              </div>
               </a>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Lorem impsum dolor</h2>
+                    <h2 class="w-title">St. Aloysius H.S.S, Kollam, Kerala</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                      <span>Duration</span><span>2013-2012</span>
+                      <span>Score</span><span>65%</span>
                     </div>
                   </div>
                 </div>
@@ -286,128 +239,251 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
-                </div>
+              <div class="work-img" style="font-size: 80px;">
+                <center>10<sup>th</sup></center>
+              </div>
               </a>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
+                    <h2 class="w-title">St. Aloysius H.S.S, Kollam, Kerala</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                      <span>Duration</span><span>2010-2011</span>
+                      <span>Score</span><span>75%</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Bindo Laro Cado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Big Bang</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
+    <!-- End Education Section -->
+    
+    <!-- ======= Online Courses Section ======= -->
+    <section id="online-courses" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Online Courses
+              </h3>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <!-- Start Programming for Everybody (Getting Started with Python) -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <div class="work-img" style="font-size: 80px;">
+                <img src="assets/img/coursera.png" class="img-fluid" alt="" srcset="">
+              </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title"><a href="https://www.coursera.org/account/accomplishments/certificate/JB9D8WVNVC4L" target="_blank">Programming for Everybody (Getting Started with Python)</a></h2>
+                    <div class="w-more">
+                      <span>Issue Date</span><span>August 2020</span>
+                      <span>Credential ID</span><span>JB9D8WVNVC4L</span>
+                      <span>Course offered by</span><span>University of Michigan</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Programming for Everybody (Getting Started with Python) -->
+          
+          <!-- Start Python Data Structures -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <div class="work-img" style="font-size: 80px;">
+                <img src="assets/img/coursera.png" class="img-fluid" alt="" srcset="">
+              </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title"><a href="https://www.coursera.org/account/accomplishments/certificate/VMJFUNW5E72K" target="_blank">Python Data Structures</a></h2>
+                    <div class="w-more">
+                      <span>Issue Date</span><span>August 2020</span>
+                      <span>Credential ID</span><span>VMJFUNW5E72K</span>
+                      <span>Course offered by</span><span>University of Michigan</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Python Data Structures -->
+          
+          <!-- Start Using Python to Access Web Data -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <div class="work-img" style="font-size: 80px;">
+                <img src="assets/img/coursera.png" class="img-fluid" alt="" srcset="">
+              </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title"><a href="https://www.coursera.org/account/accomplishments/certificate/RB69MKN6GGA4" target="_blank">Using Python to Access Web Data</a></h2>
+                    <div class="w-more">
+                      <span>Issue Date</span><span>September 2020</span>
+                      <span>Credential ID</span><span>RB69MKN6GGA4</span>
+                      <span>Course offered by</span><span>University of Michigan</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Using Python to Access Web Data -->
+          
+          <!-- Start Using Databases with Python -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <div class="work-img" style="font-size: 80px;">
+                <img src="assets/img/coursera.png" class="img-fluid" alt="" srcset="">
+              </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title"><a href="https://www.coursera.org/account/accomplishments/certificate/Q4AXTH4TYSCS" target="_blank">Using Databases with Python</a></h2>
+                    <div class="w-more">
+                      <span>Issue Date</span><span>October 2020</span>
+                      <span>Credential ID</span><span>Q4AXTH4TYSCS</span>
+                      <span>Course offered by</span><span>University of Michigan</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Using Databases with Python -->
+
+          <!-- Start Capstone: Retrieving, Processing, and Visualizing Data with Python -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <div class="work-img" style="font-size: 80px;">
+                <img src="assets/img/coursera.png" class="img-fluid" alt="" srcset="">
+              </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title"><a href="https://www.coursera.org/account/accomplishments/certificate/7JCKAN5RF2X6" target="_blank">Capstone: Retrieving, Processing, and Visualizing Data with Python</a></h2>
+                    <div class="w-more">
+                      <span>Issue Date</span><span>October 2020</span>
+                      <span>Credential ID</span><span>7JCKAN5RF2X6</span>
+                      <span>Course offered by</span><span>University of Michigan</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Capstone: Retrieving, Processing, and Visualizing Data with Python -->
+
+          <!-- Start Python for Everybody (Specialization) -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <div class="work-img" style="font-size: 80px;">
+                <img src="assets/img/coursera.png" class="img-fluid" alt="" srcset="">
+              </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title"><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/H8ULJPTLFLEV" target="_blank">Python for Everybody (Specialization)</a></h2>
+                    <div class="w-more">
+                      <span>Issue Date</span><span>October 2020</span>
+                      <span>Credential ID</span><span>H8ULJPTLFLEV</span>
+                      <span>Course offered by</span><span>University of Michigan</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Python for Everybody (Specialization) -->
+
+          <!-- Start Crash Course on Python -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <div class="work-img" style="font-size: 80px;">
+                <img src="assets/img/coursera.png" class="img-fluid" alt="" srcset="">
+              </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title"><a href="https://www.coursera.org/account/accomplishments/certificate/4GNS76BCUN52" target="_blank">Crash Course on Python</a></h2>
+                    <div class="w-more">
+                      <span>Issue Date</span><span>December 2020</span>
+                      <span>Credential ID</span><span>4GNS76BCUN52</span>
+                      <span>Course offered by</span><span>Google</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Crash Course on Python -->
+
+          <!-- Start Practical Git: for Absolute Beginners -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <div class="work-img" style="font-size: 80px;">
+                <img src="assets/img/udemy.png" class="img-fluid" alt="" srcset="">
+              </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title"><a href="https://www.udemy.com/certificate/UC-30d0c345-2cb7-408f-87a7-ecd85bb68edd/" target="_blank">Practical Git: for Absolute Beginners</a></h2>
+                    <div class="w-more">
+                      <span>Completion Date</span><span>26<sup>th</sup> January 2021</span>
+                      <span>Course offered by</span><span><a href="https://www.udemy.com/">Udemy</a></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Practical Git: for Absolute Beginners -->
+
+          <!-- Start Git and GitHub For Beginners -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <div class="work-img" style="font-size: 80px;">
+                <img src="assets/img/udemy.png" class="img-fluid" alt="" srcset="">
+              </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title"><a href="https://www.udemy.com/certificate/UC-442bf609-1657-44b5-9d1a-ba0d5f1928b6" target="_blank">Git and GitHub For Beginners</a></h2>
+                    <div class="w-more">
+                      <span>Completion Date</span><span>23<sup>rd</sup> March 2021</span>
+                      <span>Course offered by</span><span><a href="https://www.udemy.com/">Udemy</a></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Git and GitHub For Beginners -->
+        </div>
+      </div>
+    </section>
+    <!-- ======= End Online Courses Section ======= -->
 
     <!-- ======= Testimonials Section ======= -->
     <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
